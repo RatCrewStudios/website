@@ -63,9 +63,10 @@ class App extends Component {
           <div className="section" id="crew">
             <h2>Crew</h2>
             <div className="members">
-              <Member name="Akseli" role="CEO" />
-              <Member name="Lari" role="Lead Developer" />
-              <Member name="Hannu" role="Add here" />
+              <Member name="Akseli Jylhä-Ollila" role="CEO, Lead Game Designer" />
+              <Member name="Lari Kiviranta" role="Technical Director" />
+              <Member name="Hannu Suikka" role="Lead Game Developer" />
+              <Member name="Tommi Aaltonen" role="Creative Director" />
             </div>
           </div>
           <div className="section" id="crew">
