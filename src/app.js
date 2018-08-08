@@ -1,36 +1,9 @@
 import React, { Component } from 'react';
 import { FiFacebook } from "react-icons/fi";
-import Slider from "react-slick";
-import ResponsiveNavbar from '@opuscapita/react-responsive-navbar'
+import MyCarousel from "./carousel";
 
 import logo from './logo.svg';
 import './app.css';
-
-class SimpleSlider extends Component {
-  render() {
-
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      autoplaySpeed: 3000,
-      autoplay: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-
-    return (
-      <Slider {...settings}>
-        <div>
-          <img alt="Woods" src="https://images.pexels.com/photos/572688/pexels-photo-572688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
-        </div>
-        <div>
-          <img alt="Woods" src="https://images.pexels.com/photos/572688/pexels-photo-572688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
-        </div>
-      </Slider>
-    );
-  }
-}
 
 
 const Member = ({name, role}) => (
@@ -55,11 +28,12 @@ class App extends Component {
         </header>
         <main>
           <div className="section">
-            <SimpleSlider />
+            <MyCarousel />
           </div>
           <div className="section" id="about">
             <h2>About</h2>
             <p>Rat Crew Studios is an indie game studio from Oulu, Finland. We are currently working on an unannounced Action RPG title.</p>
+            <img className="logo-large" src={logo} alt="logo" />
           </div>
           <div className="section" id="crew">
             <h2>Crew</h2>

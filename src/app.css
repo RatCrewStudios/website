@@ -1,5 +1,6 @@
 header {
-  background: rgba(33,33,33,0.9);
+  background: rgba(255,255,255,0.95);
+  border-bottom: 6px double black;
   position: fixed;
   width: 100%;
   display: flex;
@@ -16,24 +17,29 @@ header {
 }
 
 header .logo {
-  width: 8rem;
-  padding: 2rem;
+  width: 10rem;
+  padding: 1rem;
 }
 
 header ul {
   display: flex;
 }
+@media(max-width: 800px) {
+  header ul {
+    font-size: 90%
+  }
+}
 
 header ul li a:link {
-  padding: 1.5rem;
+  padding: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: block;
 }
 
 header ul li a:visited {
-  color: #fff;
+  color: #000;
 }
 
 header ul li a:hover {
@@ -70,16 +76,22 @@ footer .facebook {
 }
 
 .section {
-  padding: 16rem 5rem 5rem 5rem;
+  padding: 5rem 2.5%;
 }
 
 .section:nth-child(odd) {
   background: #000;
+  border-top: 14rem double #FFF;
   color: #FFF;
+}
+
+.section:nth-child(odd):first-of-type {
+  border-top: none;
 }
 
 .section:nth-child(even) {
   background: #FFF;
+  border-top: 14rem double #000;
   color: #000;
 }
 
@@ -114,3 +126,9 @@ footer .facebook {
   }
 }
 
+.logo-large {
+  width: 20rem;
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
