@@ -11,19 +11,20 @@ body {
 }
 
 h1, h2, h3, p {
-  line-height: 1.8em;
+  line-height: 2em;
 }
 
 h1 {
-  font-size: 5.06rem;
+  font-size: 74.8px; font-size: 7.478rem;
 }
 
 h2 {
-  font-size: 3.375rem;
+  font-size: 56.1px; font-size: 5.61rem;
+  font-family: "Passion One", serif;
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 42.1px; font-size: 4.21rem;
 }
 
 a:link, a:visited {

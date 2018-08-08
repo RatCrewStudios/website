@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FiFacebook } from "react-icons/fi";
 import Slider from "react-slick";
+import ResponsiveNavbar from '@opuscapita/react-responsive-navbar'
 
 import logo from './logo.svg';
 import './app.css';
@@ -34,8 +35,8 @@ class SimpleSlider extends Component {
 
 const Member = ({name, role}) => (
   <div className="member">
-    <h3>{name}</h3>
-    <p>{role}</p>
+    <p className="name">{name}</p>
+    <p className="role">{role}</p>
   </div>
 )
 
@@ -69,7 +70,7 @@ class App extends Component {
               <Member name="Tommi Aaltonen" role="Creative Director" />
             </div>
           </div>
-          <div className="section" id="crew">
+          <div className="section" id="contact">
             <h2>Contact</h2>
             <p><a href="mailto:contact@ratcrewstudios.com">contact@ratcrewstudios.com</a></p>
             <p>Kajaaninkatu 27 C 1, 90100 Oulu</p>

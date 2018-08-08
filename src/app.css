@@ -70,7 +70,7 @@ footer .facebook {
 }
 
 .section {
-  padding: 5rem;
+  padding: 16rem 5rem 5rem 5rem;
 }
 
 .section:nth-child(odd) {
@@ -85,9 +85,32 @@ footer .facebook {
 
 #crew .members {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media(min-width: 800px) {
+  #crew .members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 #crew .member {
-  border-bottom: 3px double white;
+  border-left: 3px double #fff;
+  margin: 1rem;
 }
+
+#crew .member .name {
+  letter-spacing: 0.025em;
+  font-size: 162%;
+}
+
+@media(min-width: 800px) {
+  #crew .member {
+    border: 0;
+
+    border-bottom: 3px double #fff;
+  }
+}
+
