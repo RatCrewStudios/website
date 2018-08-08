@@ -41,20 +41,4 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Rats
-        // @65.0122768,25.4815098,17z
-        var rats = {lat: 65.0122768, lng: 25.4815098};
-        // The map, centered at Rats
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 4, center: rats});
-        // The marker, positioned at Rats
-        var marker = new google.maps.Marker({position: rats, map: map});
-      }
-    </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjnly75ObLrilNhqQhbS_PDcVgIQVzzEs&callback=initMap">
-    </script>
 </html>
