@@ -47,7 +47,7 @@ class App extends Component {
             <h2>Contact</h2>
             <p><a href="mailto:contact@ratcrewstudios.com">contact@ratcrewstudios.com</a></p>
             <p>Kajaaninkatu 27 C 1, 90100 Oulu</p>
-            <iframe className="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1685.3950993308931!2d25.48150981655119!3d65.01227905005403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468032ac0a2ac713%3A0xcfeae1a1bb41c557!2sKajaaninkatu+27%2C+90100+Oulu!5e0!3m2!1sen!2sfi!4v1533737584733" width="400" height="300" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+            <iframe className="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1685.3950993308931!2d25.48150981655119!3d65.01227905005403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468032ac0a2ac713%3A0xcfeae1a1bb41c557!2sKajaaninkatu+27%2C+90100+Oulu!5e0!3m2!1sen!2sfi!4v1533737584733" width="300" height="300" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
           </div>
           <footer className="section">
             <aside className="social">
