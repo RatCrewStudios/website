@@ -12,12 +12,12 @@ const items = [
   {
     src: 'https://th08.deviantart.net/fs71/PRE/f/2012/208/8/3/frogster_game_concept_03_by_memod-d58t3ej.jpg',
     altText: 'Goblets of Faith',
-    caption: 'New Release Dive into the Deep End - Goblets of Faith'
+    caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)'
   },
   {
     src: 'https://orig00.deviantart.net/76a6/f/2012/203/8/5/frogster_game_concept_01_by_memod-d588e7r.jpg',
     altText: 'Goblets of Faith II',
-    caption: 'Goblets of Faith II - The Saga Continues'
+    caption: 'Goblets of Faith II - The Saga Continues (2018/04)'
   }
 ];
 

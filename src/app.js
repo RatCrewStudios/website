@@ -30,6 +30,7 @@ class App extends Component {
           <div className="section white" id="about">
             <h2>About</h2>
             <p>Rat Crew Studios is an indie game studio from Oulu, Finland. We are currently working on an unannounced Action RPG title.</p>
+            <p>Come to meet us at <a href="http://www.gamescom.global/" alt="gamescom">gamescom</a>!</p>
             <img className="logo-large" src={logo} alt="logo" />
           </div>
           <div id="crew-anchor" className="anchor" />

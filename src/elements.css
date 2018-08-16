@@ -20,7 +20,8 @@ h1 {
 
 h2 {
   font-size: 56.1px; font-size: 5.61rem;
-  font-family: "Passion One", serif;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.025em;
 }
 
 h3 {

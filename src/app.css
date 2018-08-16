@@ -29,7 +29,8 @@ header .logo {
 
 header ul {
   display: flex;
-  font-family: "Passion One", serif;
+  font-weight: 900;
+  font-family: "Passion One", sans-serif;
   font-size: 217%;
 }
 @media(max-width: 800px) {
@@ -45,6 +46,7 @@ header ul li a:link {
   color: #000;
   display: block;
   transition: 0.15s all;
+  border-bottom: 6px double transparent;
 }
 
 header ul li a:visited {
@@ -53,6 +55,7 @@ header ul li a:visited {
 
 header ul li a:hover {
   color: red;
+  border-color: red;
 }
 
 main {
@@ -172,14 +175,20 @@ footer .icon:hover {
 }
 .carousel h3, .carousel p {
   text-shadow: 1px 2px 3px rgba(0,0,0,0.666);
-  line-height: 5;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+.carousel h3 {
+  font-family: "Abril Fatface", serif;
 }
 @media(max-width: 800px) {
   .carousel h3 {
     font-size: 24px; font-size: 2.4rem;
+    line-height: 1.366;
   }
   .carousel p {
     font-size: 90%;
+    display: none;
   }
 }
 .carousel-control-next, .carousel-control-prev {
