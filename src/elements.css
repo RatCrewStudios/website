@@ -29,15 +29,20 @@ h3 {
 }
 
 a:link, a:visited {
-  color: #6D6DBF;
+  color: #307cf4;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #175fd1;
+}
+
 a:active {
-  color: #4444BF;
+  font-style: italic;
 }
 
 img {
