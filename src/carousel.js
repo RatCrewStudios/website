@@ -12,12 +12,12 @@ const items = [
   {
     src: 'https://th08.deviantart.net/fs71/PRE/f/2012/208/8/3/frogster_game_concept_03_by_memod-d58t3ej.jpg',
     altText: 'Goblets of Faith',
-    caption: 'Dive into the Deep End'
+    caption: 'New Release Dive into the Deep End - Goblets of Faith'
   },
   {
     src: 'https://orig00.deviantart.net/76a6/f/2012/203/8/5/frogster_game_concept_01_by_memod-d588e7r.jpg',
     altText: 'Goblets of Faith II',
-    caption: 'The Saga Continues'
+    caption: 'Goblets of Faith II - The Saga Continues'
   }
 ];
 
@@ -68,7 +68,7 @@ class MyCarousel extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <CarouselCaption captionText={item.altText} captionHeader={item.caption} />
         </CarouselItem>
       );
     });

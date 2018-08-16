@@ -1,6 +1,7 @@
 header {
-  background: rgba(255,255,255,0.95);
-  border-bottom: 6px double black;
+  background: rgba(255,255,255,0.90);
+  border-bottom: 1px solid #333;
+  box-shadow: 0 1px 2px #000;
   position: fixed;
   width: 100%;
   display: flex;
@@ -8,6 +9,11 @@ header {
   flex-direction: column;
   color: #fff;
   z-index: 1;
+  transition: .3s all;
+  min-height: 14rem;
+}
+header:hover {
+  background: #fff;
 }
 @media(min-width: 800px) {
   header {
@@ -18,24 +24,27 @@ header {
 
 header .logo {
   width: 10rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 header ul {
   display: flex;
+  font-family: "Passion One", serif;
+  font-size: 217%;
 }
 @media(max-width: 800px) {
   header ul {
-    font-size: 90%
+    font-size: 95%
   }
 }
 
 header ul li a:link {
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
   display: block;
+  transition: 0.15s all;
 }
 
 header ul li a:visited {
@@ -47,8 +56,6 @@ header ul li a:hover {
 }
 
 main {
-  position: relative;
-  top: 16rem;
   text-align: center;
 }
 @media(min-width: 800px) {
@@ -88,24 +95,28 @@ footer .icon:hover {
   background: rgba(255,255,255,0.1)
 }
 
-.section {
-  padding: 5rem 2.5%;
+.anchor {
+  position: relative;
+  top: -18rem;
 }
 
-.section:nth-child(odd) {
+.section {
+  padding: 2.5rem 2.5% 5rem 2.5%;
+}
+
+.black {
   background: #000;
-  border-top: 14rem double #FFF;
+  border-bottom: 6rem double #FFF;
   color: #FFF;
 }
-
-.section:nth-child(odd):first-of-type {
-  border-top: none;
-}
-
-.section:nth-child(even) {
+.white {
   background: #FFF;
-  border-top: 14rem double #000;
+  border-bottom: 6rem double #000;
   color: #000;
+}
+.white:last-of-type {
+  border-bottom: none;
+  margin-bottom: 3.5rem;
 }
 
 #crew .members {
@@ -134,7 +145,6 @@ footer .icon:hover {
 @media(min-width: 800px) {
   #crew .member {
     border: 0;
-
     border-bottom: 3px double #fff;
   }
 }
@@ -144,4 +154,39 @@ footer .icon:hover {
   max-width: 50%;
   display: block;
   margin: 0 auto;
+  padding-top: 2em;
+}
+
+.carousel {
+  margin: 0 auto;
+  padding-top: 14rem;
+}
+@media(max-width: 800px) {
+  .carousel {
+    padding-top: 18rem;
+  }
+}
+.carousel img {
+  max-width: unset;
+  width: 100%;
+}
+.carousel h3, .carousel p {
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.666);
+  line-height: 5;
+}
+@media(max-width: 800px) {
+  .carousel h3 {
+    font-size: 24px; font-size: 2.4rem;
+  }
+  .carousel p {
+    font-size: 90%;
+  }
+}
+.carousel-control-next, .carousel-control-prev {
+  width: 7.5%;
+  padding-top: 14rem;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
 }
