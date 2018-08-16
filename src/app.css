@@ -87,6 +87,11 @@ main {
     width: 1600px;
   }
 }
+@media(max-width: 1600px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 
 .google-maps {
   padding: 2em 0;

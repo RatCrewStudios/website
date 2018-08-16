@@ -19,7 +19,7 @@ class App extends Component {
       <div id="top" className="app">
         <header>
           <ul>
-            <li><a href="#top"><img className="logo" src={logoOutline} />Rat Crew Studios</a></li>
+            <li><a href="#top"><img className="logo" src={logoOutline} /><span className="hide-mobile">Rat Crew Studios</span></a></li>
             <li><a href="#crew-anchor">Crew</a></li>
             <li><a href="#press-anchor">Press</a></li>
             <li><a href="#contact-anchor">Contact</a></li>
