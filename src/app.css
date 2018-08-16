@@ -29,7 +29,6 @@ header .logo {
 
 header ul {
   display: flex;
-  font-weight: 900;
   font-family: "Passion One", sans-serif;
   font-size: 217%;
 }
@@ -100,7 +99,7 @@ footer .icon:hover {
 
 .anchor {
   position: relative;
-  top: -18rem;
+  top: -19rem;
 }
 
 .section {
@@ -166,7 +165,7 @@ footer .icon:hover {
 }
 @media(max-width: 800px) {
   .carousel {
-    padding-top: 18rem;
+    padding-top: 19rem;
   }
 }
 .carousel img {
