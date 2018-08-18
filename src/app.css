@@ -101,11 +101,7 @@ main {
 }
 
 footer p {
-  font-weight: 200;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 300;
-  font-size: 90%;
+  font-size: 85%;
 }
 
 footer .social {
