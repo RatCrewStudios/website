@@ -19,10 +19,10 @@ class App extends Component {
       <div id="top" className="app">
         <header>
           <ul>
-            <li><a href="#top"><img className="logo" src={logoOutline} /><span className="hide-mobile">Rat Crew Studios</span></a></li>
-            <li><a href="#crew-anchor">Crew</a></li>
-            <li><a href="#press-anchor">Press</a></li>
-            <li><a href="#contact-anchor">Contact</a></li>
+            <li><a title="Top of page" href="#top"><img className="logo" alt="Top" src={logoOutline} /><span className="hide-mobile">Rat Crew Studios</span></a></li>
+            <li><a title="Crew section" href="#crew-anchor">Crew</a></li>
+            <li><a title="Press section" href="#press-anchor">Press</a></li>
+            <li><a title="Contact section" href="#contact-anchor">Contact</a></li>
           </ul>
         </header>
         <MyCarousel />
