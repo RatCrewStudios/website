@@ -1,6 +1,6 @@
 {
-  "name": "rat-crew-studios",
-  "homepage": "https://ratcrewstudios.github.io/website",
+  "name": "webpage",
+  "homepage": "https://ratcrewstudios.com/website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
