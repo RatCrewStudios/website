@@ -1,6 +1,6 @@
 {
   "name": "webpage",
-  "homepage": "https://ratcrewstudios.com/website",
+  "homepage": "https://ratcrewstudios.com",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
