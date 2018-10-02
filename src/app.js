@@ -23,8 +23,8 @@ class App extends Component {
     return (
       <div id="top" className="app">
         <header>
+		<img className="logo" alt="Top" src={logo} />
           <ul>
-            <li><img className="logo" alt="Top" src={logo} /></li>
             <li id="pageLink" className="hide-mobile" ><a title="Top of page" href="#top"><span className="hide-mobile">Rat Crew Studios</span></a></li>
             <li id="crewLink" ><a title="Crew section" href="#crew-anchor">Crew</a></li>
             <li id="pressLink" ><a title="Press section" href="#press-anchor">Press</a></li>
@@ -34,6 +34,7 @@ class App extends Component {
         <main>
         <MyCarousel />
           <div className="section white" id="about">
+            <h2>Who are we?</h2>
             <p>Rat Crew Studios is an independent game studio from Oulu, Finland. We have dedicated ourselves to creating fun and ambitious role-playing games with a Finnish attitude and perseverance.</p>
 			<p>We are currently working on an unannounced Action RPG title. To be announced soon!</p>
           </div>
@@ -71,7 +72,7 @@ class App extends Component {
                 <FiInstagram className="icon instagram"/>
               </a>
             </aside>
-            <p>All Rights Reserved // Copyright {new Date().getFullYear()} &copy;</p>
+            <p>© {new Date().getFullYear()} Rat Crew Studios Ltd.</p>
           </footer>
         </main>
       </div>

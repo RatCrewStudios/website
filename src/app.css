@@ -1,5 +1,5 @@
 header {
-  background: rgba(235,235,235,0.85);
+  background: rgba(245,245,245,0.85);
   border-bottom: 1px solid #1e1e1e;
   box-shadow: 0 1px 2px #1e1e1e;
   width: 100%;
@@ -10,35 +10,39 @@ header {
   color: #fafafa;
   z-index: 1;
   transition: .3s all;
-  
 }
 header:hover {
-  background: #fff;
+  background: rgba(245,245,245,1);
 }
-@media(min-width: 800px) {
+/* @media(min-width: 801px) { */
   header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;  
   }
-}
+/* } */
 
 header .logo {
-  margin: 0;
-  padding: 0 1.5rem 0 0;
-  height: 10rem;
+	margin: 0;
+	padding: 0 1.5rem 0 0;
+	height: 18.9rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+
 @media(max-width: 800px) {
   header .logo {
   margin: 0;
   padding: 0 1.5rem 0 0;
-    height: 6rem;
+    height: 12rem;
   }
 }
 
 header ul {
   display: flex;
   font-family: "Passion One", sans-serif;
-  font-size: 217%;
+  font-size: 200%;
+  margin-left: 21rem;
 }
 @media(max-width: 800px) {
   header ul {
@@ -68,8 +72,8 @@ header ul li a:visited {
 }
 
 header ul li a:hover {
-  color: red;
-  border-bottom: 6px double red;
+  color: #cc2229;
+  border-bottom: 6px double #cc2229;
 }
 
 header ul li a:active {
@@ -77,11 +81,18 @@ header ul li a:active {
   border-bottom: 36px double #1e1e1e;
 }
 
+@media(max-width: 800px) {
+header ul li a:active {
+  font-style: normal;
+  border-bottom: 28px double #1e1e1e;
+};
+}
+
 main {
   text-align: center;
   padding-top:7em;
 }
-@media(min-width: 800px) {
+@media(min-width: 801px) {
   main {
     margin: 0 auto;
     margin: 0 auto;
@@ -146,10 +157,10 @@ footer .icon:hover {
 .black {
   background: #1e1e1e;
   border-bottom: 3.6rem double #fafafa;
-  color: #fafafa;
+  color: rgb(245,245,245);
 }
 .white {
-  background: #fafafa;
+  background: rgb(245,245,245);
   border-bottom: 3.6rem double #1e1e1e;
   color: #1e1e1e;
 }
@@ -163,12 +174,11 @@ footer .icon:hover {
   flex-direction: column;
   justify-content: space-around;
 }
-@media(min-width: 800px) {
+@media(min-width: 801px) {
   #crew .members {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-	align-items: le
   }
 }
 @media(max-width: 800px) {
@@ -190,19 +200,15 @@ footer .icon:hover {
   font-size: 133%;
 }
 
-@media(min-width: 800px) {
+@media(min-width: 801px) {
   #crew .member {
     border: 0;
     /* border-bottom: 3px double #fafafa; */
   }
 }
-
-.logo-large {
-  width: 20rem;
-  max-width: 50%;
-  display: block;
-  margin: 0 auto;
-  padding: 3em;
+#crew .memberImg {
+	padding: 2rem;
+	box-sizing: border-box;
 }
 
 .carousel {
