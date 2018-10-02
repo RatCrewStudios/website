@@ -1,7 +1,7 @@
 {
   "name": "webpage",
   "homepage": "https://ratcrewstudios.com/website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.4.2",
