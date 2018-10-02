@@ -9,11 +9,11 @@ import akseliImg from './akseli.png';
 import tommiImg from './tommi.png';
 import hannuImg from './hannu.png';
 
-const Member = ({name, role, linkedin, image}) => (
+const Member = ({name, position, linkedin, image}) => (
   <div className="member">
 	<img className="memberImg" alt={name} src={image} />
     <p className="name">{name}</p>
-    <p className="role">{role}</p>
+    <p className="role">{position}</p>
 	<a target="_blank" rel="noopener noreferrer" href={linkedin}><img className="linkedinLogo" alt="s" src={linkedinLogo} /></a>
   </div>
 )
@@ -41,10 +41,10 @@ class App extends Component {
           <div className="section black" id="crew">
             <h2>Crew</h2>
             <div className="members">
-              <Member name="Akseli Jylhä-Ollila" role="CEO, Lead Game Designer" linkedin="https://www.linkedin.com/in/akseli-jylh%C3%A4-ollila-3643b4167" image={akseliImg}/>
-              <Member name="Lari Kivirinta" role="Technical Director" linkedin="https://www.linkedin.com/in/lari-kivirinta" image={lariImg} />
-              <Member name="Tommi Aaltonen" role="Creative Director" linkedin="https://www.linkedin.com/in/tommi-aaltonen-aa63b1167" image={tommiImg} />
-              <Member name="Hannu Suikka" role="Lead Game Developer" linkedin="https://www.linkedin.com/in/hannu-suikka-b61802167" image={hannuImg} />
+              <Member name="Akseli Jylhä-Ollila" position="CEO, Lead Game Designer" linkedin="https://www.linkedin.com/in/akseli-jylh%C3%A4-ollila-3643b4167" image={akseliImg}/>
+              <Member name="Lari Kivirinta" position="Technical Director" linkedin="https://www.linkedin.com/in/lari-kivirinta" image={lariImg} />
+              <Member name="Tommi Aaltonen" position="Creative Director" linkedin="https://www.linkedin.com/in/tommi-aaltonen-aa63b1167" image={tommiImg} />
+              <Member name="Hannu Suikka" position="Lead Game Developer" linkedin="https://www.linkedin.com/in/hannu-suikka-b61802167" image={hannuImg} />
             </div>
           </div>
           <div id="press-anchor" className="anchor" />
