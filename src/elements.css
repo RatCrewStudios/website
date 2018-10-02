@@ -26,6 +26,13 @@ h2 {
   letter-spacing: 0.025em;
 }
 
+@media(max-width: 500px) {
+	h2 {
+	  font-size: 46.1px; font-size: 4.61rem;
+	  font-family: "Abril Fatface", serif;
+	  letter-spacing: 0.025em;
+	}
+}
 h3 {
   font-size: 42.1px; font-size: 4.21rem;
 }

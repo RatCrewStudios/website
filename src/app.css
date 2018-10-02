@@ -23,7 +23,7 @@ header:hover {
 
 header .logo {
 	margin: 0;
-	padding: 0 1.5rem 0 0;
+	padding: 0 0 0 0;
 	height: 18.9rem;
 	position: absolute;
 	top: 0;
@@ -32,8 +32,7 @@ header .logo {
 
 @media(max-width: 800px) {
   header .logo {
-  margin: 0;
-  padding: 0 1.5rem 0 0;
+	margin: 0;
     height: 12rem;
   }
 }
@@ -46,7 +45,14 @@ header ul {
 }
 @media(max-width: 800px) {
   header ul {
-    font-size: 150%;
+    font-size: 133%;
+	margin-left: 13rem;
+  }
+}
+@media(max-width: 500px) {
+  header ul {
+    font-size: 100%;
+	margin-left: 13rem;
   }
 }
 
@@ -64,6 +70,13 @@ header ul li a:link {
 @media(max-width: 800px) {
 header ul li a:link {
 	line-height: 3.4rem;
+	padding: 1rem 2rem;
+  }
+}
+@media(max-width: 500px) {
+header ul li a:link {
+	line-height: 3.4rem;
+	padding: 1rem 0.5rem;
   }
 }
 
