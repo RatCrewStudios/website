@@ -1,5 +1,5 @@
 header {
-  background: rgba(250,250,250,0.90);
+  background: rgba(235,235,235,0.85);
   border-bottom: 1px solid #1e1e1e;
   box-shadow: 0 1px 2px #1e1e1e;
   width: 100%;
@@ -10,6 +10,7 @@ header {
   color: #fafafa;
   z-index: 1;
   transition: .3s all;
+  
 }
 header:hover {
   background: #fff;
@@ -24,11 +25,13 @@ header:hover {
 header .logo {
   margin: 0;
   padding: 0 1.5rem 0 0;
-  height: 2.6rem;
+  height: 10rem;
 }
 @media(max-width: 800px) {
   header .logo {
-    height: 1rem;
+  margin: 0;
+  padding: 0 1.5rem 0 0;
+    height: 6rem;
   }
 }
 
@@ -39,11 +42,12 @@ header ul {
 }
 @media(max-width: 800px) {
   header ul {
-    font-size: 100%;
+    font-size: 150%;
   }
 }
 
 header ul li a:link {
+	line-height: 7.6rem;
   padding: 1rem 2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -52,6 +56,11 @@ header ul li a:link {
   transition: 0.15s all;
   border-top: 6px double transparent;
   border-bottom: 6px double transparent;
+}
+@media(max-width: 800px) {
+header ul li a:link {
+	line-height: 3.4rem;
+  }
 }
 
 header ul li a:visited {
@@ -70,9 +79,11 @@ header ul li a:active {
 
 main {
   text-align: center;
+  padding-top:7em;
 }
 @media(min-width: 800px) {
   main {
+    margin: 0 auto;
     margin: 0 auto;
     width: 800px;
   }
@@ -84,15 +95,12 @@ main {
 }
 @media(min-width: 1600px) {
   main {
-    width: 1600px;
+    width: 1200px;
   }
 }
 @media(max-width: 800px) {
   .hide-mobile {
     display: none;
-  }
-  header .logo {
-    padding: 0;
   }
 }
 
@@ -160,23 +168,32 @@ footer .icon:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+	align-items: le
   }
 }
+@media(max-width: 800px) {
+  #crew .members {
+	align-items: center;
+  }
+}
+#crew .member {
+  max-width:300px;
+}
+
 
 #crew .member {
-  border-left: 3px double #fafafa;
   margin: 1rem;
 }
 
 #crew .member .name {
   letter-spacing: 0.025em;
-  font-size: 162%;
+  font-size: 133%;
 }
 
 @media(min-width: 800px) {
   #crew .member {
     border: 0;
-    border-bottom: 3px double #fafafa;
+    /* border-bottom: 3px double #fafafa; */
   }
 }
 
@@ -189,8 +206,8 @@ footer .icon:hover {
 }
 
 .carousel {
+	display:none;
   margin: 0 auto;
-  padding-top: 7.2rem;
 }
 @media(max-width: 800px) {
   .carousel {
@@ -226,4 +243,11 @@ footer .icon:hover {
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 4rem;
   height: 4rem;
+}
+
+#pressLink, #pageLink, #crewLink, #contactLink {
+	
+}
+#pressLink, #press {
+	display: none;
 }

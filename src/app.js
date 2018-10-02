@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiDownloadCloud } from 'react-icons/fi';
 import MyCarousel from './carousel';
 import logo from './logo.svg';
-import logoOutline from './logo-outline.svg';
 import './app.css';
+import linkedinLogo from './In-2CRev-21px-R.png';
+import lariImg from './lari.png';
+import akseliImg from './akseli.png';
+import tommiImg from './tommi.png';
+import hannuImg from './hannu.png';
 
-
-const Member = ({name, role}) => (
+const Member = ({name, role, linkedin, image}) => (
   <div className="member">
+	<img className="memberImg" alt={name} src={image} />
     <p className="name">{name}</p>
     <p className="role">{role}</p>
+	<a href={linkedin}><img className="linkedinLogo" alt="s" src={linkedinLogo} /></a>
   </div>
 )
 
@@ -19,27 +24,27 @@ class App extends Component {
       <div id="top" className="app">
         <header>
           <ul>
-            <li><a title="Top of page" href="#top"><img className="logo" alt="Top" src={logoOutline} /><span className="hide-mobile">Rat Crew Studios</span></a></li>
-            <li><a title="Crew section" href="#crew-anchor">Crew</a></li>
-            <li><a title="Press section" href="#press-anchor">Press</a></li>
-            <li><a title="Contact section" href="#contact-anchor">Contact</a></li>
+            <li><img className="logo" alt="Top" src={logo} /></li>
+            <li id="pageLink" className="hide-mobile" ><a title="Top of page" href="#top"><span className="hide-mobile">Rat Crew Studios</span></a></li>
+            <li id="crewLink" ><a title="Crew section" href="#crew-anchor">Crew</a></li>
+            <li id="pressLink" ><a title="Press section" href="#press-anchor">Press</a></li>
+            <li id="contactLink" ><a title="Contact section" href="#contact-anchor">Contact</a></li>
           </ul>
         </header>
-        <MyCarousel />
         <main>
+        <MyCarousel />
           <div className="section white" id="about">
-            <img className="logo-large" src={logo} alt="logo" />
-            <p>Rat Crew Studios is an indie game studio from Oulu, Finland. We are currently working on an unannounced Action RPG title.</p>
-            <p>Come to meet us at <a href="http://www.gamescom.global/" alt="gamescom">gamescom</a>!</p>
+            <p>Rat Crew Studios is an independent game studio from Oulu, Finland. We have dedicated ourselves to creating fun and ambitious role-playing games with a Finnish attitude and perseverance.</p>
+			<p>We are currently working on an unannounced Action RPG title. To be announced soon!</p>
           </div>
           <div id="crew-anchor" className="anchor" />
           <div className="section black" id="crew">
             <h2>Crew</h2>
             <div className="members">
-              <Member name="Akseli Jylhä-Ollila" role="CEO, Lead Game Designer" />
-              <Member name="Lari Kiviranta" role="Technical Director" />
-              <Member name="Hannu Suikka" role="Lead Game Developer" />
-              <Member name="Tommi Aaltonen" role="Creative Director" />
+              <Member name="Akseli Jylhä-Ollila" role="CEO, Lead Game Designer" linkedin="https://www.linkedin.com/in/akseli-jylh%C3%A4-ollila-3643b4167" image={akseliImg}/>
+              <Member name="Lari Kivirinta" role="Technical Director" linkedin="https://www.linkedin.com/in/lari-kivirinta" image={lariImg} />
+              <Member name="Tommi Aaltonen" role="Creative Director" linkedin="https://www.linkedin.com/in/tommi-aaltonen-aa63b1167" image={tommiImg} />
+              <Member name="Hannu Suikka" role="Lead Game Developer" linkedin="https://www.linkedin.com/in/hannu-suikka-b61802167" image={hannuImg} />
             </div>
           </div>
           <div id="press-anchor" className="anchor" />
