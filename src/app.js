@@ -34,7 +34,7 @@ class App extends Component {
         <main>
         <MyCarousel />
           <div className="section white" id="about">
-            <h2>Who are we?</h2>
+            <h2>Who Are We?</h2>
             <p>Rat Crew Studios is an independent game studio from Oulu, Finland. We have dedicated ourselves to creating fun and ambitious role-playing games with a Finnish attitude and perseverance.</p>
 			<p>We are currently working on an unannounced Action RPG title. To be announced soon!</p>
           </div>
@@ -68,7 +68,7 @@ class App extends Component {
               <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ratcrewstudios" title="Follow us on Twitter">
                 <FiTwitter className="icon twitter"/>
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ratcrewstudios1/" title="Follow us on Instagram">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ratcrewstudiosltd/" title="Follow us on Instagram">
                 <FiInstagram className="icon instagram"/>
               </a>
             </aside>
