@@ -7,17 +7,22 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import './carousel.css'
+import trailerImg from './sddefault.jpg';
 
 const items = [
   {
-    src: 'https://th08.deviantart.net/fs71/PRE/f/2012/208/8/3/frogster_game_concept_03_by_memod-d58t3ej.jpg',
+    src: trailerImg,
     altText: 'Goblets of Faith',
-    caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)'
-  },
+    caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
+    type: 'video',
+    modalSrc: 'https://www.youtube.com/embed/E9-JdUYOco8'
+  }, 
   {
-    src: 'https://orig00.deviantart.net/76a6/f/2012/203/8/5/frogster_game_concept_01_by_memod-d588e7r.jpg',
-    altText: 'Goblets of Faith II',
-    caption: 'Goblets of Faith II - The Saga Continues (2018/04)'
+    src: 'https://broken.ratcrewstudios.com/material/Quinn_concept_3_0.jpg',
+    altText: 'Goblets of Faith',
+    caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
+    type: 'image',
+    modalSrc: ''
   }
 ];
 
@@ -60,15 +65,19 @@ class MyCarousel extends Component {
   render() {
     const { activeIndex } = this.state;
 
-    const slides = items.map((item) => {
+    var slides = items.map((item) => { 
       return (
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.altText} captionHeader={item.caption} />
+        
+        <a href="#top" className="modal-link" data-toggle="modal" data-target="#videoModal" data-type={item.type} data-videosrc={item.modalSrc}>
+				  <img src={item.src} alt={item.altText} />
+			  </a>
+
+        <CarouselCaption captionText={item.altText} captionHeader={item.caption} />
         </CarouselItem>
       );
     });
@@ -87,6 +96,5 @@ class MyCarousel extends Component {
     );
   }
 }
-
 
 export default MyCarousel;

@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-size: 18px; font-size: 1.8rem;
+  font-size: 15px; font-size: 1.5rem;
   margin: 0;
   padding: 0;
   background: rgba(245,245,245,1);
@@ -13,28 +13,34 @@ body {
 }
 
 h1, h2, h3, p {
-  line-height: 1.8em;
+  line-height: 1.5em;
 }
 
 h1 {
-  font-size: 74.8px; font-size: 7.478rem;
+  font-size: 64.8px; font-size: 6.478rem;
 }
 
 h2 {
-  font-size: 56.1px; font-size: 5.61rem;
+  font-size: 46.1px; font-size: 4.61rem;
   font-family: "Abril Fatface", serif;
   letter-spacing: 0.025em;
 }
+h3 {
+  font-size: 32.1px; font-size: 3.21rem;
+}
 
 @media(max-width: 500px) {
+
+	h1 {
+  font-size: 54.8px; font-size: 5.478rem;
+	}
 	h2 {
-	  font-size: 46.1px; font-size: 4.61rem;
-	  font-family: "Abril Fatface", serif;
+  font-size: 36.1px; font-size: 3.61rem;
 	  letter-spacing: 0.025em;
 	}
-}
-h3 {
-  font-size: 42.1px; font-size: 4.21rem;
+	h3 {
+  font-size: 22.1px; font-size: 2.21rem;
+	}
 }
 
 a:link, a:visited {
