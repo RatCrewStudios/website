@@ -27,7 +27,7 @@ class App extends Component {
           <img className="logo" alt="Top" src={logo} />
           <ul>
             <li id="pageLink" className="hide-mobile" ><a title="Top of page" href="#top"><span className="hide-mobile">Rat Crew Studios</span></a></li>
-            <li id="crewLink" ><a title="Crew" href="#crew-anchor">Crew</a></li>
+            <li id="crewLink" ><a title="The Crew" href="#crew-anchor">Crew</a></li>
             {/* <li id="gamesLink" ><a title="Games" href="#games-anchor">Games</a></li> */}
             <li id="contactLink" ><a title="Contact" href="#contact-anchor">Contact</a></li>
             <li id="pressLink" ><a title="Press" href="https://press.ratcrewstudios.com" target="_blank" rel="noopener noreferrer" >Press</a></li>

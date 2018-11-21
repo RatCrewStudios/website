@@ -52,7 +52,7 @@ header ul {
 @media(max-width: 500px) {
   header ul {
     font-size: 100%;
-	margin-left: 13rem;
+	  margin-left: 13rem;
   }
 }
 
@@ -233,15 +233,32 @@ footer p {
     /* border-bottom: 3px double #fafafa; */
   }
 }
+
 #crew .memberImg {
 	padding: 2rem;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
+
+#crew .memberImg:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+#crew .desc
+{
+	font-size: 1.3rem;
+  line-height: 1.5em;
+  display: none;	
+}
+
+
 
 .carousel {
 	/* display:none;*/
   margin: 0 auto;
-    padding-top: 2rem;
+  padding-top: 0.4rem;
 }
 @media(max-width: 800px) {
   .carousel {
@@ -258,7 +275,8 @@ footer p {
   margin-bottom: 1rem;
 }
 .carousel h3 {
-  font-family: "Abril Fatface", serif;
+  font-family: "Bookman", serif;
+  font-weight: normal;
 }
 
 .carousel-caption
@@ -332,12 +350,6 @@ footer p {
 	/* display: none;*/
 }
 
-.desc
-{
-	font-size: 1.3rem;
-	line-height: 1.5em;
-	
-}
 
 .modal-lg, .modal {
   margin: 0 auto;

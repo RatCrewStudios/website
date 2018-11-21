@@ -18,15 +18,22 @@ h1, h2, h3, p {
 
 h1 {
   font-size: 64.8px; font-size: 6.478rem;
+  font-family: "Bookman", serif;
+  letter-spacing: 0.035em;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 46.1px; font-size: 4.61rem;
-  font-family: "Abril Fatface", serif;
-  letter-spacing: 0.025em;
+  font-family: "Bookman", serif;
+  letter-spacing: 0.035em;
+  font-weight: bold;
 }
 h3 {
   font-size: 32.1px; font-size: 3.21rem;
+  font-family: "Bookman", serif;
+  letter-spacing: 0.035em;
+  font-weight: bold;
 }
 
 @media(max-width: 500px) {

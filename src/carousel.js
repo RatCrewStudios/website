@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 import './carousel.css'
 import trailerImg from './sddefault.jpg';
+import milkyWayImg from './Milky_Way.jpg';
 
 const items = [
   {
@@ -16,9 +17,9 @@ const items = [
     caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
     type: 'video',
     modalSrc: 'https://www.youtube.com/embed/E9-JdUYOco8'
-  }, 
+  },
   {
-    src: 'https://broken.ratcrewstudios.com/material/Quinn_concept_3_0.jpg',
+    src: milkyWayImg,
     altText: 'Goblets of Faith',
     caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
     type: 'image',
