@@ -13,7 +13,7 @@ import milkyWayImg from './Milky_Way.jpg';
 const items = [
   {
     src: trailerImg,
-    altText: 'Goblets of Faith',
+    altText: '',
     caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
     type: 'video',
     modalSrc: 'https://www.youtube.com/embed/E9-JdUYOco8'
