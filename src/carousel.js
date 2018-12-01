@@ -7,23 +7,16 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import './carousel.css'
-import trailerImg from './sddefault.jpg';
-import milkyWayImg from './Milky_Way.jpg';
+// import trailerImg from './broken_stars_trailer_header.png';
+import trailerImg from './broken_animation_100_loop01.gif';
 
 const items = [
   {
     src: trailerImg,
-    altText: '',
-    caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
+    altText: 'Check out BROKEN announcement teaser',
+    caption: 'THE SERPENT STIRS...',
     type: 'video',
-    modalSrc: 'https://www.youtube.com/embed/E9-JdUYOco8'
-  },
-  {
-    src: milkyWayImg,
-    altText: 'Goblets of Faith',
-    caption: 'New Release: Dive into the Deep End - Goblets of Faith (2018/10)',
-    type: 'image',
-    modalSrc: ''
+    modalSrc: 'https://www.youtube.com/embed/skgXBnnX1IE'
   }
 ];
 
@@ -75,10 +68,12 @@ class MyCarousel extends Component {
         >
         
         <a href="#top" className="modal-link" data-toggle="modal" data-target="#videoModal" data-type={item.type} data-videosrc={item.modalSrc}>
-				  <img src={item.src} alt={item.altText} />
+				  {/* <img src={item.src} alt={item.altText} /> */}
+          <div className="modalImage" data-bgimg={item.src}>
+          
+          <CarouselCaption captionText={item.altText} captionHeader={item.caption} />
+          </div>
 			  </a>
-
-        <CarouselCaption captionText={item.altText} captionHeader={item.caption} />
         </CarouselItem>
       );
     });

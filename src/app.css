@@ -107,6 +107,17 @@ main {
   padding-top: 6em;
   width: 100%;
 }
+@media(max-width: 801px) {
+  main {
+    padding-top: 3em;
+  }
+}
+@media(max-width: 500px) {
+  main {
+  padding-top: 6em;
+  }
+}
+
 
 #about, #crew, #contact, #games, #press {
   margin: 0 auto;
@@ -136,7 +147,9 @@ main {
     width: 1400px;
   }
 }
-@media(max-width: 920px) {
+
+
+@media(max-width: 1055px) {
   .hide-mobile {
     display: none;
   }
@@ -270,14 +283,60 @@ footer p {
   max-width: unset;
   width: 100%;
 }
+.carousel .modalImage
+{
+  max-width: unset;
+  width: 100%;
+  height: 250px; 
+  /* background-image: url(./giphy.gif); */
+
+  /* lt ie8 */
+  -ms-background-position-x: center;
+  -ms-background-position-y: 100%;
+  background-position: center 60%;
+
+  /* scale bg image proportionately */
+  background-size: cover;
+}
+
+
+@media(min-width: 801px) {
+  .carousel .modalImage
+  {
+    height: 400px;
+  }
+}
+@media(min-width: 1200px) {
+  .carousel .modalImage
+  {
+    height: 500px;
+  }
+}
+@media(min-width: 1600px) {
+  .carousel .modalImage
+  {
+    height: 800px;
+  }
+}
+@media(min-width: 2000px) {
+  .carousel .modalImage
+  {
+    height: 1050px;
+  }
+}
+
 .carousel h3, .carousel p {
   text-shadow: 1px 2px 3px rgba(0,0,0,0.666);
   line-height: 2;
   margin-bottom: 1rem;
 }
-.carousel h3 {
-  font-family: "Bookman", serif;
+.carousel h3, .carousel h3:active {
+  font-family: "Ubuntu", sans-serif;
   font-weight: normal;
+  font-style: normal;
+}
+.carousel p,.carousel p:active {
+  font-style: normal;
 }
 
 .carousel-caption
@@ -285,53 +344,86 @@ footer p {
     position: absolute;
     right: 15%;
     bottom: 20px;
-    left: 15%;
+    left: 5%;
     z-index: 10;
     padding-top: 0;
     padding-bottom: 0;
-    color: #fff;
+    color: #ffffffbd;
     text-align: center;
 }
 .carousel h3, .carousel p {
     text-shadow: 1px 2px 3px rgba(0,0,0,0.666);
-    line-height: 1.5;
+    line-height: 1.1;
     margin-bottom: 0rem;
+    text-align: left;
 }
-
-
-@media(min-width: 801px) {
-  .carousel h3 {
-    font-size: 16px; font-size: 1.6rem;
-  }
-  .carousel p {
-		font-size: 13px; font-size: 1.3rem;
-  }
+.carousel-caption p {
+  text-decoration: underline;
+  color: #ff8c00bd;
 }
 
 @media(max-width: 800px) {
   .carousel h3 {
-    font-size: 14px; font-size: 1.4rem;
+    max-width: 280px; 
+		font-size: 32.1px; font-size: 3.21rem;
   }
+	.carousel h3::first-letter {
+		font-size: 40.1px; font-size: 4.01rem;
+	}
   .carousel p {
-		font-size: 12px; font-size: 1.2rem;
+    max-width: 280px; 
+		font-size: 14.1px; font-size: 1.41rem;
   }
 }
+@media(max-width: 500px) {
+  .carousel h3 {
+    max-width: 220px; 
+		font-size: 22.1px; font-size: 2.21rem;
+  }
+	.carousel h3::first-letter {
+		font-size: 32.1px; font-size: 3.21rem;
+	}
+  .carousel p {
+		font-size: 14.1px; font-size: 1.41rem;
+  }
+}
+@media(min-width: 801px) {
+  .carousel h3 {
+    max-width: 450px; 
+		font-size: 52.1px; font-size: 5.21rem;
+  }
+	.carousel h3::first-letter {
+		font-size: 62.1px; font-size: 6.21rem;
+	}
+  .carousel p {
+		font-size: 18.1px; font-size: 1.81rem;
+  }
+}
+
 @media(min-width: 1200px) {
-	.carousel h3 {    
-		font-size: 22px; font-size: 2.2rem;
+	.carousel h3 {
+    max-width: 550px; 
+		font-size: 72.1px; font-size: 7.21rem;
+	}
+	.carousel h3::first-letter {
+		font-size: 86.1px; font-size: 8.61rem;
 	}
 	.carousel p {
-		font-size: 16px; font-size: 1.6rem;
+		font-size: 21.1px; font-size: 2.11rem;
 	}
   
 }
 @media(min-width: 1600px) {
   
-	.carousel h3 {    
-		font-size: 32.1px; font-size: 3.21rem;
+	.carousel h3 {
+    max-width: 550px; 
+		font-size: 72.1px; font-size: 7.21rem;
+	}
+	.carousel h3::first-letter {
+		font-size: 86.1px; font-size: 8.61rem;
 	}
 	.carousel p {
-		font-size: 16.1px; font-size: 1.61rem;
+		font-size: 21.1px; font-size: 2.11rem;
 	}
 }
 
@@ -350,7 +442,6 @@ footer p {
   width: 4rem;
   height: 4rem;
 }
-
 #pressLink, #pageLink, #crewLink, #contactLink {
 	
 }
@@ -372,7 +463,7 @@ footer p {
   height: 90%;
   margin: 0 auto;
   padding: 0;
-  top: 5rem;
+  top: 1rem;
 }
 @media (min-width: 992px){
 	.modal-lg {
@@ -417,7 +508,6 @@ footer p {
     width: 100%;
 	}
 }
-
 .modal
 {
   top: 0;
@@ -428,4 +518,14 @@ footer p {
   width: 100%;
   height: 100%;
   padding: 0rem;
+}
+.modal-link img 
+{
+  height: 100%;
+  top: 50%;
+  transform: translateY(-10%);
+}
+.carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon
+{
+  display: none;
 }
