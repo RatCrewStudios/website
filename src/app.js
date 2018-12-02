@@ -86,9 +86,6 @@ class App extends Component {
               <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ratcrewstudios/" title="Follow us on Facebook">
                 <FiFacebook className="icon facebook" />
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ratcrewstudios" title="Follow us on Twitter">
-                <FiTwitter className="icon twitter" />
-              </a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ratcrewstudiosltd/" title="Follow us on Instagram">
                 <FiInstagram className="icon instagram" />
               </a>
