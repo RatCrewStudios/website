@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { FiFacebook, FiYoutube, FiInstagram } from 'react-icons/fi';
 import MyCarousel from './carousel';
 import logo from './logo.svg';
 import './app.css';
@@ -85,6 +85,9 @@ class App extends Component {
             <aside className="social">
               <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ratcrewstudios/" title="Follow us on Facebook">
                 <FiFacebook className="icon facebook" />
+              </a>  
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCiEVlyA1B_ZZTPDXh0g9Plg" title="Subscribe to our Youtube">
+                <FiYoutube className="icon Youtube" />
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ratcrewstudiosltd/" title="Follow us on Instagram">
                 <FiInstagram className="icon instagram" />
